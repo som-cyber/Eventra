@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ÉVENTRA - Where Moments Become Memories. Discover extraordinary experiences and create lasting memories.">
+    <title>ÉVENTRA - Where Moments Become Memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/features.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html#home" class="nav-brand">ÉVENTRA</a>
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#events" class="nav-link">Explore Events</a>
+                <a href="my-registrations.html" class="nav-link">My Registrations</a>
+                <a href="index.html#categories" class="nav-link">Categories</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon" aria-hidden="true"></span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span>✨</span><span>Your Next Experience Starts Here</span></div>
+                    <h1 class="hero-title">Experience More.<br>Live Every Moment.</h1>
+                    <p class="hero-subtitle">Discover extraordinary experiences, connect with inspiring people, and create memories that last forever.</p>
+                    <div class="hero-actions">
+                        <a href="#events" class="btn btn-primary btn-large">Explore Events</a>
+                        <a href="register.html" class="btn btn-secondary btn-large">Host an Experience</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item"><div class="stat-value">50+</div><div class="stat-label">Experiences</div></div>
+                        <div class="stat-item"><div class="stat-value">10K+</div><div class="stat-label">Attendees</div></div>
+                        <div class="stat-item"><div class="stat-value">20+</div><div class="stat-label">Cities</div></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#events" class="scroll-indicator" aria-label="Scroll to events"><span>Scroll</span><span>↓</span></a>
+        </section>
+
+        <section class="section" id="events">
+            <div class="container" id="featured">
+                <div class="section-header">
+                    <h2 class="section-title">Curated Experiences</h2>
+                    <p class="section-subtitle">Discover the events everyone's talking about</p>
+                </div>
+                <div class="events-grid stagger-children" id="featuredEventsGrid"></div>
+                <div class="text-center mt-xl"><a href="events.html" class="btn btn-secondary">View All Events</a></div>
+            </div>
+        </section>
+
+        <section class="section discovery-section" id="find-your-vibe">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">A little more you</span>
+                    <h2 class="section-title">Find Your Vibe.</h2>
+                    <p class="section-subtitle">Tell us what you're in the mood for. We'll find the experience.</p>
+                    <p class="match-explainer">Match scores weigh interests (60%), experience personality (25%), budget (10%), and gathering size (5%). Scores use only the preferences you share.</p>
+                </div>
+                <div class="vibe-options" id="vibeOptions" aria-label="Choose one or more interests"></div>
+                <div class="discovery-actions">
+                    <button class="btn btn-primary" type="button" id="discoverVibe">Discover My Events</button>
+                    <button class="text-button" type="button" id="clearVibe">Clear selections</button>
+                </div>
+                <p class="discovery-status" id="vibeStatus" aria-live="polite"></p>
+                <div class="events-grid recommendation-grid" id="vibeRecommendations" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="section quiz-section" id="experience-quiz">
+            <div class="container-narrow">
+                <div class="section-header">
+                    <span class="eyebrow">Your story, your kind of night</span>
+                    <h2 class="section-title">What Kind of Experience Seeker Are You?</h2>
+                    <p class="section-subtitle">Five thoughtful questions. A more personal way to find your next favorite memory.</p>
+                </div>
+                <div class="quiz-card" id="personalityQuiz">
+                    <div class="quiz-progress" id="quizProgress" aria-label="Quiz progress">
+                        <div class="quiz-progress-track"><span id="quizProgressBar"></span></div>
+                        <span id="quizProgressLabel">Question 1 of 5</span>
+                    </div>
+                    <div class="quiz-content" id="quizContent" aria-live="polite"></div>
+                    <div class="quiz-actions" id="quizActions">
+                        <button class="btn btn-secondary" type="button" id="quizBack" hidden>Back</button>
+                        <button class="btn btn-primary" type="button" id="quizNext" disabled>Continue</button>
+                    </div>
+                    <div class="quiz-result" id="quizResult" hidden aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories-section" id="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Explore Categories</h2>
+                    <p class="section-subtitle">Find experiences that match your interests</p>
+                </div>
+                <div class="categories-grid stagger-children" id="categoriesGrid"></div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="experience-highlight">
+                    <div class="reveal">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="A vibrant ÉVENTRA event experience" class="experience-image" loading="lazy">
+                    </div>
+                    <div class="experience-content reveal">
+                        <h2>Not Just Events.<br>Unforgettable Experiences.</h2>
+                        <p>At ÉVENTRA, we believe that every moment matters. We curate extraordinary experiences that bring people together, spark creativity, and create memories that last a lifetime. From intimate gatherings to grand celebrations, we help you discover events that truly matter.</p>
+                        <a href="#events" class="btn btn-primary">Explore Events</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="contact">
+            <div class="container">
+                <div class="newsletter-content">
+                    <span id="newsletter"></span>
+                    <h2 class="section-title">Stay in the Loop</h2>
+                    <p class="section-subtitle">Get first access to extraordinary experiences and exclusive events</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <label class="sr-only" for="newsletterEmail">Email address</label>
+                        <input class="newsletter-input" id="newsletterEmail" type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ÉVENTRA</h3>
+                    <p>Where moments become memories. Discover extraordinary experiences and create lasting connections.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="events.html">All Events</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="register.html">Host Event</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Careers</a></li>
+                        <li><a href="#about">Press</a></li>
+                        <li><a href="#about">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="support.html#help-center">Help Center</a></li>
+                        <li><a href="support.html#contact-us">Contact Us</a></li>
+                        <li><a href="support.html#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="support.html#terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ÉVENTRA. All rights reserved.</p>
+                <p>Designed with ❤️ for extraordinary experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/compatibility.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/vibe-discovery.js"></script>
+    <script src="js/personality-quiz.js"></script>
+</body>
+</html>

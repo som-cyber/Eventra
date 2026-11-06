@@ -1,0 +1,106 @@
+/* ========================================
+   ÉVENTRA - Theme System
+   ======================================== */
+
+/* Dark Theme (Default - Premium Luxury) */
+:root {
+    --bg-primary: #0B0B0D;
+    --bg-secondary: #141418;
+    --bg-tertiary: #1B1B20;
+    --bg-card: #1B1B20;
+    --bg-glass: rgba(27, 27, 32, 0.8);
+
+    --text-primary: #F5F1E9;
+    --text-secondary: #A4A0A0;
+    --text-muted: #6B6868;
+    --text-inverse: #0B0B0D;
+
+    --accent-primary: #C6A46C;
+    --accent-secondary: #9B8AFB;
+    --accent-gold: #C6A46C;
+    --accent-purple: #9B8AFB;
+
+    --border-color: rgba(255, 255, 255, 0.09);
+    --border-light: rgba(255, 255, 255, 0.05);
+    --border-hover: rgba(198, 164, 108, 0.3);
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 32px rgba(198, 164, 108, 0.15);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-primary: #FAFAF9;
+    --bg-secondary: #F5F5F4;
+    --bg-tertiary: #E7E5E4;
+    --bg-card: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, 0.8);
+
+    --text-primary: #1C1917;
+    --text-secondary: #57534E;
+    --text-muted: #A8A29E;
+    --text-inverse: #FAFAF9;
+
+    --accent-primary: #B8860B;
+    --accent-secondary: #7C3AED;
+    --accent-gold: #B8860B;
+    --accent-purple: #7C3AED;
+
+    --border-color: rgba(0, 0, 0, 0.1);
+    --border-light: rgba(0, 0, 0, 0.05);
+    --border-hover: rgba(184, 134, 11, 0.3);
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 32px rgba(184, 134, 11, 0.2);
+}
+
+/* Theme Transitions */
+* {
+    transition: background-color var(--transition-base),
+                color var(--transition-base),
+                border-color var(--transition-base),
+                box-shadow var(--transition-base);
+}
+
+/* Theme-specific adjustments */
+[data-theme="light"] .navbar {
+    background: rgba(250, 250, 249, 0.8);
+}
+
+[data-theme="light"] .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="light"] .hero-overlay {
+    background: linear-gradient(135deg, rgba(28, 25, 23, 0.75) 0%, rgba(28, 25, 23, 0.6) 50%, rgba(28, 25, 23, 0.75) 100%);
+}
+
+[data-theme="light"] .event-card {
+    background: var(--bg-card);
+}
+
+[data-theme="light"] .category-card {
+    background: var(--bg-card);
+}
+
+[data-theme="light"] .newsletter {
+    background: var(--bg-secondary);
+}
+
+[data-theme="light"] .footer {
+    background: var(--bg-secondary);
+}
+
+/* Exclude certain elements from transition for performance */
+img,
+video,
+iframe {
+    transition: none;
+}

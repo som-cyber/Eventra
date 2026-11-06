@@ -1,0 +1,6 @@
+{
+  "name": "event-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static HTML, CSS, and vanilla JavaScript event discovery and registration website."
+}

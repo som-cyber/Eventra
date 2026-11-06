@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View your event registrations on ÉVENTRA">
+    <title>My Registrations - ÉVENTRA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/features.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html#home" class="nav-brand">ÉVENTRA</a>
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="events.html" class="nav-link">Explore Events</a>
+                <a href="my-registrations.html" class="nav-link">My Registrations</a>
+                <a href="index.html#categories" class="nav-link">Categories</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon" aria-hidden="true"></span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- My Registrations Section -->
+    <section class="section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">My Registrations</h1>
+                <p class="section-subtitle">View and manage your event registrations</p>
+            </div>
+            <div id="registrationsList" style="max-width: 800px; margin: 0 auto;">
+                <!-- Registrations will be loaded here -->
+            </div>
+            <div id="noRegistrations" style="display: none; text-align: center; padding: var(--space-3xl);">
+                <div style="font-size: 4rem; margin-bottom: var(--space-lg);">📋</div>
+                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-sm); color: var(--text-primary);">No Registrations Yet</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">Start exploring events and register for extraordinary experiences</p>
+                <a href="events.html" class="btn btn-primary">Explore Events</a>
+            </div>
+        </div>
+    </section>
+    <div id="passDialogHost"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ÉVENTRA</h3>
+                    <p>Where moments become memories. Discover extraordinary experiences and create lasting connections.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="events.html">All Events</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#featured">Featured</a></li>
+                        <li><a href="register.html">Host Event</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#about">Careers</a></li>
+                        <li><a href="index.html#about">Press</a></li>
+                        <li><a href="index.html#about">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="support.html#help-center">Help Center</a></li>
+                        <li><a href="support.html#contact-us">Contact Us</a></li>
+                        <li><a href="support.html#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="support.html#terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ÉVENTRA. All rights reserved.</p>
+                <p>Designed with ❤️ for extraordinary experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/digital-pass.js"></script>
+    <script src="js/registrations.js"></script>
+</body>
+</html>
