@@ -24,7 +24,6 @@ Built using **HTML5, CSS3, and Vanilla JavaScript**.
 9. [Demo and Security Limitations](#demo-and-security-limitations)
 10. [Future Enhancements](#future-enhancements)
 11. [Contributing](#contributing)
-12. [License](#license)
 
 ---
 
