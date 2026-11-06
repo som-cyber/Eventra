@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ÉVENTRA — Where Moments Become Memories
 
 ÉVENTRA is a responsive event-discovery and registration website built with HTML5, CSS3, and vanilla JavaScript. It has no frontend framework, package installation, or build step.
@@ -36,3 +37,6 @@ Then visit `http://localhost:8000`.
 - Responsive premium design with scroll and hover animations
 
 Interests, quiz results, event preferences, registrations (including demo payment status and reference), favorites, theme preference, and newsletter subscriptions are stored in the browser's Local Storage. Checkout is a local simulation only; no real payment is processed and no card, bank, or UPI credentials are collected. Digital passes are demonstration references; their QR codes are not verified entry credentials.
+=======
+# Eventra
+>>>>>>> 3e09926994f41fe8f453d94bcb09876884fa0768
