@@ -4,7 +4,7 @@
 
 ÉVENTRA is a responsive event discovery and registration website designed to help users explore events, discover experiences based on their interests, register for upcoming events, and manage their digital event passes.
 
-Live Demo:- eventra-pi-five.vercel.app
+Live Demo:- https://eventra-pi-five.vercel.app/
 
 Built using **HTML5, CSS3, and Vanilla JavaScript**.
  ÉVENTRA provides an interactive event management experience without requiring frontend frameworks, package installations, or complex build tools.
